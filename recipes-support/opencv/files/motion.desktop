@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Motion Template
+Comment=OpenCV Motion Templates example
+Exec=motempl
+Icon=computer
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=Graphics;

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Max Extremal Region
+Comment=OpenCV Maximal Extremal Region interest point detector
+Exec=morphology /usr/share/opencv/samples/puzzle.jpg
+Icon=computer
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=Graphics;

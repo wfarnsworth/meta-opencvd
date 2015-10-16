@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Face Detector
+Comment=OpenCV Face Detect Algorithm example
+Exec=facedetect --cascade="/usr/share/opencv/samples/data/haarcascade_frontalface_alt.xml" --nested-cascade="/usr/share/opencv/samples/data/haarcascade_eye.xml" --scale=1.3
+Icon=computer
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=Graphics;

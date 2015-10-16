@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Face Detect Ex
+Comment=OpenCV Face Detect from Examples
+Exec=/usr/bin/opencv-examples/facedetector
+Icon=computer
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=Graphics;

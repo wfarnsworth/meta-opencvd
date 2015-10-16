@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Motion Detection
+Comment=OpenCV Motion Detection from Examples
+Exec=/usr/bin/opencv-examples/motiondetection
+Icon=computer
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=Graphics;

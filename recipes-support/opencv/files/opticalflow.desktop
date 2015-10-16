@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Optical Flow
+Comment=OpenCV Optical Flow from Examples
+Exec=/usr/bin/opencv-examples/opticalflow
+Icon=computer
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=Graphics;

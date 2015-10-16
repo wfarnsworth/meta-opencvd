@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Line Detection Ex
+Comment=OpenCV Line Detection from Examples
+Exec=/usr/bin/opencv-examples/linedetection
+Icon=computer
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=Graphics;

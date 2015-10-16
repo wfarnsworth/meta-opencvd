@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Canny Edge Detector
+Comment=OpenCV Canny Edge Detector from examples
+Exec=/usr/bin/opencv-examples/cannyedgedetect
+Icon=computer
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=Graphics;

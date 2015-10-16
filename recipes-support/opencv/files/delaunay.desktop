@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Delaunay
+Comment=OpenCV demostrates iterative construction of delaunay triangulation and voronoi tesselation
+Exec=delaunay
+Icon=computer
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=Graphics;

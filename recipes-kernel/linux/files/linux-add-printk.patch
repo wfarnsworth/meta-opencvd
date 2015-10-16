@@ -1,0 +1,12 @@
+diff --git a/kernel/panic.c b/kernel/panic.c
+index 6d63003..64b237c 100644
+--- a/kernel/panic.c
++++ b/kernel/panic.c
+@@ -101,6 +101,7 @@ void panic(const char *fmt, ...)
+ 	vsnprintf(buf, sizeof(buf), fmt, args);
+ 	va_end(args);
+ 	printk(KERN_EMERG "Kernel panic - not syncing: %s\n",buf);
++	printk("Kernel command line: %s\n", boot_command_line);
+ #ifdef CONFIG_DEBUG_BUGVERBOSE
+ 	/*
+ 	 * Avoid nested stack-dumping if a panic occurs during oops processing

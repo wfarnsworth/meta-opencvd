@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=fback_c
+Comment=OpenCV display dense Franeback optical flow
+Exec=fback_c
+Icon=computer
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=Graphics;

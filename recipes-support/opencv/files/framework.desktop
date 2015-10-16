@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Framework
+Comment=OpenCV Framework from Examples
+Exec=/usr/bin/opencv-examples/cannyedgedetect
+Icon=computer
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=Graphics;

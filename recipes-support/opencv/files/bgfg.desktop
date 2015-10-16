@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Background Foreground
+Comment=OpenCV background foregraound sample app
+Exec=bgfg_codebook -c
+Icon=computer
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=Graphics;

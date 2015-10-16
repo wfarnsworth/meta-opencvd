@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Skin Tone
+Comment=OpenCV Skin Tone Detector
+Exec=adaptiveskindetector
+Icon=computer
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=Graphics;

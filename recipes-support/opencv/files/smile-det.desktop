@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Smile Detector
+Comment=OpenCV Smile Detect Algorithm example
+Exec=smiledetect --cascade="/usr/share/opencv/samples/data/haarcascade_frontalface_alt.xml" --smile-cascade="/usr/share/opencv/samples/data/haarcascade_smile.xml" --scale=2.0
+Icon=computer
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=Graphics;

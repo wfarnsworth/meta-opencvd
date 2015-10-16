@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Polar Transforms
+Comment=OpenCV Linear-Polar and Log-Polar image transforms
+Exec=polar_transforms
+Icon=computer
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=Graphics;

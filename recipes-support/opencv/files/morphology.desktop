@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Morphology
+Comment=OpenCV Morphology example
+Exec=morphology /usr/share/opencv/samples/baboon.jpg
+Icon=computer
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=Graphics;
