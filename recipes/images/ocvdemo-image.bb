@@ -18,8 +18,6 @@ APPEND += " rootwait rootdelay=5 "
 CORE_IMAGE_EXTRA_INSTALL += "\
     directfb-examples \
     xauth \
-    file \
-    tree \
     opencv \
     opencv-samples \
     opencv-examples \
