@@ -4,9 +4,9 @@ LICENSE = "Proprietary distributable with conditions"
 DEPENDS = "opencv"
 LIC_FILES_CHKSUM = "file://${COREBASE}/LICENSE;md5=4d92cd373abda3937c2bc47fbc49d690"
 
-SRC_URI = "file://opencv-examples-1.0.0.tar.gz"
+SRC_URI = "git://github.com/challinan/opencv-examples.git"
+SRCREV = "${AUTOREV}"
 
-# EXAMPLE_PROGRAMS = "cannyedgedetect facedetector linedetection motiondetection opticalflow"
 EXAMPLE_PROGRAMS = " cannyedgedetect facedetector linedetection motiondetection opticalflow framework"
 
 EXTRA_CXX_MAKE_FLAGS = " \
