@@ -9,6 +9,8 @@ SRCREV = "${AUTOREV}"
 
 EXAMPLE_PROGRAMS = " cannyedgedetect facedetector linedetection motiondetection opticalflow framework"
 
+S = "${WORKDIR}/git"
+
 EXTRA_CXX_MAKE_FLAGS = " \
         -I${STAGING_DIR_TARGET}/opencv2/. \
         -I${STAGING_DIR_TARGET}/opencv2/release \
