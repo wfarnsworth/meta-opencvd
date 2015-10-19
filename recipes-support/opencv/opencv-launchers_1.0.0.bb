@@ -19,12 +19,15 @@ SRC_URI = "file://smile-det.desktop \
            file://linedetection.desktop \
            file://motiondetection.desktop \
            file://opticalflow.desktop \
+           file://killall.desktop \
+           file://kill-all.sh \
            "
 
 S = "${WORKDIR}"
 
 do_install() {
     install -d ${D}/${datadir}/applications
+    install -d ${D}/${bindir}
     install -m 0644 ${S}/smile-det.desktop ${D}/${datadir}/applications
     install -m 0644 ${S}/face-det.desktop ${D}/${datadir}/applications
     install -m 0644 ${S}/bgfg.desktop ${D}/${datadir}/applications
@@ -40,4 +43,6 @@ do_install() {
     install -m 0644 ${S}/linedetection.desktop ${D}/${datadir}/applications
     install -m 0644 ${S}/motiondetection.desktop ${D}/${datadir}/applications
     install -m 0644 ${S}/opticalflow.desktop ${D}/${datadir}/applications
+    install -m 0644 ${S}/killall.desktop ${D}/${datadir}/applications
+    install -m 0755 ${S}/kill-all.sh ${D}/${bindir}
 }

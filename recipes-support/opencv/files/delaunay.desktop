@@ -6,4 +6,4 @@ Icon=computer
 Terminal=false
 Type=Application
 StartupNotify=false
-Categories=Graphics;
+Categories=OpenCV;

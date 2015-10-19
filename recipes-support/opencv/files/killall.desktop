@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Kill All
+Comment=Kill All Demos
+Exec=/usr/bin/kill-all.sh
+Icon=computer
+Terminal=true
+Type=Application
+StartupNotify=false
+Categories=OpenCV;
