@@ -1,8 +1,8 @@
 DESCRIPTION = "OpenCV example programs based on The BDTI Quick-Start files"
 HOMEPAGE = "http://www.embedded-vision.com/platinum-members/bdti/embedded-vision-training/documents/pages/OpenCVVMwareImage"
-LICENSE = "Proprietary distributable with conditions"
+LICENSE = "Proprietary"
 DEPENDS = "opencv"
-LIC_FILES_CHKSUM = "file://${COREBASE}/LICENSE;md5=4d92cd373abda3937c2bc47fbc49d690"
+LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"
 
 SRC_URI = "git://github.com/challinan/opencv-examples.git"
 SRCREV = "${AUTOREV}"
@@ -40,13 +40,13 @@ LXX_FLAGS= " -Wl,-O1 -Wl,--hash-style=gnu \
         ${STAGING_DIR_TARGET}/usr/lib64/libopencv_calib3d.so.2.4.9 \
         ${STAGING_DIR_TARGET}/usr/lib64/libopencv_legacy.so.2.4.9 \
         ${STAGING_DIR_TARGET}/usr/lib64/libopencv_contrib.so.2.4.9 \
-        -ldl -lm -lpthread -lrt -lz -Wl,-rpath,${STAGING_DIR_TARGET}/usr/lib64"
+        -ldl -lm -lpthread -lrt -lz"
+
+#        -ldl -lm -lpthread -lrt -lz -Wl,-rpath,${STAGING_DIR_TARGET}/usr/lib64"
 
 do_compile() {
     bbnote "Entering do_compile"
     cd ${S}
-    # ${CXX} ${CXXFLAGS} ${EXTRA_CXX_MAKE_FLAGS} -o cannyedgedetect -c cannyedgedetect.cpp
-    # ${CXX} ${TARGET_CXXFLAGS} ${LXX_FLAGS} ${EXTRA_CXX_MAKE_FLAGS} -o cannyedgedetect cannyedgedetect.cpp
     echo "Compiling for ${EXAMPLE_PROGRAMS}"
     for i in ${EXAMPLE_PROGRAMS}; do
         echo "Compiling for $i"
@@ -54,13 +54,14 @@ do_compile() {
     done
 }
 
-FILES_${PN} = " \
-    ${bindir}/${PN}/cannyedgedetect \
-    ${bindir}/${PN}/facedetector \
-    ${bindir}/${PN}/framework \
-    ${bindir}/${PN}/linedetection \
-    ${bindir}/${PN}/motiondetection \
-    ${bindir}/${PN}/opticalflow"
+FILES_${PN} = "${bindir}/${PN}/*"
+FILES_${PN}-dbg += "${bindir}/${PN}/.debug/*"
+#    ${bindir}/${PN}/cannyedgedetect \
+#    ${bindir}/${PN}/facedetector \
+#    ${bindir}/${PN}/framework \
+#    ${bindir}/${PN}/linedetection \
+#    ${bindir}/${PN}/motiondetection \
+#    ${bindir}/${PN}/opticalflow"
 
 # inherit autotools
 
@@ -69,12 +70,4 @@ do_install() {
     for i in ${EXAMPLE_PROGRAMS}; do
         install -m 0755 ${S}/$i ${D}/${bindir}/${PN}
     done
-#install -m 0755 ${S}/cannyedgedetect ${D}/${bindir}/${PN}
-#    install -m 0755 ${S}/facedetector ${D}/${bindir}/${PN}
-#   install -m 0755 ${S}/framework ${D}/${bindir}/${PN}
-#    install -m 0755 ${S}/linedetection ${D}/${bindir}/${PN}
-#    install -m 0755 ${S}/motiondetection ${D}/${bindir}/${PN}
-#    install -m 0755 ${S}/opticalflow ${D}/${bindir}/${PN}
 }
-
-#EXTRA_OEMAKE = "-DNDEBUG -DPYTHON_USE_NUMPY=1 -I${STAGING_LIBDIR}/pymodules/python2.7/numpy/core/include"
