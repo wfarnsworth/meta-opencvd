@@ -29,17 +29,16 @@ EXTRA_CXX_MAKE_FLAGS = " \
         -I${STAGING_DIR_TARGET}/opencv2/modules/contrib/include "
 
 LXX_FLAGS= " -Wl,-O1 -Wl,--hash-style=gnu \
-        ${STAGING_DIR_TARGET}/usr/lib64/libopencv_core.so.2.4.9 \
-        ${STAGING_DIR_TARGET}/usr/lib64/libopencv_flann.so.2.4.9 \
-        ${STAGING_DIR_TARGET}/usr/lib64/libopencv_imgproc.so.2.4.9 \
-        ${STAGING_DIR_TARGET}/usr/lib64/libopencv_highgui.so.2.4.9 \
-        ${STAGING_DIR_TARGET}/usr/lib64/libopencv_ml.so.2.4.9 \
-        ${STAGING_DIR_TARGET}/usr/lib64/libopencv_video.so.2.4.9 \
-        ${STAGING_DIR_TARGET}/usr/lib64/libopencv_objdetect.so.2.4.9 \
-        ${STAGING_DIR_TARGET}/usr/lib64/libopencv_features2d.so.2.4.9 \
-        ${STAGING_DIR_TARGET}/usr/lib64/libopencv_calib3d.so.2.4.9 \
-        ${STAGING_DIR_TARGET}/usr/lib64/libopencv_legacy.so.2.4.9 \
-        ${STAGING_DIR_TARGET}/usr/lib64/libopencv_contrib.so.2.4.9 \
+        ${STAGING_DIR_TARGET}/usr/lib64/libopencv_core.so.3.1.0 \
+        ${STAGING_DIR_TARGET}/usr/lib64/libopencv_flann.so.3.1.0 \
+        ${STAGING_DIR_TARGET}/usr/lib64/libopencv_imgproc.so.3.1.0 \
+        ${STAGING_DIR_TARGET}/usr/lib64/libopencv_highgui.so.3.1.0 \
+        ${STAGING_DIR_TARGET}/usr/lib64/libopencv_ml.so.3.1.0 \
+        ${STAGING_DIR_TARGET}/usr/lib64/libopencv_video.so.3.1.0 \
+        ${STAGING_DIR_TARGET}/usr/lib64/libopencv_objdetect.so.3.1.0 \
+        ${STAGING_DIR_TARGET}/usr/lib64/libopencv_features2d.so.3.1.0 \
+        ${STAGING_DIR_TARGET}/usr/lib64/libopencv_calib3d.so.3.1.0 \
+        ${STAGING_DIR_TARGET}/usr/lib64/libopencv_videoio.so.3.1.0 \
         -ldl -lm -lpthread -lrt -lz"
 
 #        -ldl -lm -lpthread -lrt -lz -Wl,-rpath,${STAGING_DIR_TARGET}/usr/lib64"
