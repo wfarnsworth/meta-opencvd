@@ -1,6 +1,6 @@
 SUMMARY = "Core image with opencv and opencv samples"
 
-IMAGE_FEATURES += "qt4-pkgs x11-base splash ssh-server-openssh"
+IMAGE_FEATURES += " x11-base splash ssh-server-openssh"
 
 LICENSE = "MIT"
 
@@ -27,11 +27,12 @@ CORE_IMAGE_EXTRA_INSTALL += "\
     demo-utils \
     "
 
-CORE_IMAGE_EXTRA_INSTALL += "packagegroup-xfce-base epiphany x11vnc"
+# removed x11vnc
+CORE_IMAGE_EXTRA_INSTALL += "packagegroup-xfce-base epiphany"
 
 inherit core-image
 
-ROOTFS_POSTPROCESS_COMMAND_append = " copy_conf_to_image; zap_fotowall; "
+ROOTFS_POSTPROCESS_COMMAND_append = " copy_conf_to_image; "
 
 copy_conf_to_image() {
         bbnote "Executing copy_conf_to_image"
@@ -39,10 +40,4 @@ copy_conf_to_image() {
         cp ${TOPDIR}/conf/bblayers.conf ${IMAGE_ROOTFS}/boot
         echo "Built from: ${TOPDIR}  using ${PN}"
         echo "Built from: ${TOPDIR}  using ${PN}" >>${IMAGE_ROOTFS}/etc/issue
-}
-
-zap_fotowall() {
-    # For clarity for the demo users, remove the one unrelated entry
-    bbnote "Removing fotowall desktop entry"
-    rm ${IMAGE_ROOTFS}/usr/share/applications/fotowall.desktop
 }
