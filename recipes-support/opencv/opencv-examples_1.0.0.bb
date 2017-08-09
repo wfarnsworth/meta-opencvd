@@ -4,10 +4,10 @@ LICENSE = "Proprietary"
 DEPENDS = "opencv"
 LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"
 
-SRC_URI = "git://github.com/challinan/opencv-examples.git"
+SRC_URI = "git://github.com/wfarnsworth/opencv-examples.git"
 SRCREV = "${AUTOREV}"
 
-EXAMPLE_PROGRAMS = " cannyedgedetect facedetector linedetection motiondetection opticalflow framework"
+EXAMPLE_PROGRAMS = " cannyedgedetect facedetector linedetection motiondetection opticalflow framework smiledetect"
 
 S = "${WORKDIR}/git"
 
